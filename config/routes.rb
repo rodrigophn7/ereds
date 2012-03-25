@@ -1,5 +1,7 @@
 Ereds::Application.routes.draw do
 
+  resources :alunos
+
   root :to => "home#index"
   get "home/index"
 
