@@ -7,6 +7,7 @@ gem 'rails', '3.2.2'
 
 gem 'sqlite3'
 
+gem 'heroku'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,6 +19,11 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :production do
+   gem 'thin'
+   gem 'pg'
 end
 
 gem 'jquery-rails'
