@@ -1,193 +1,3 @@
-2012-03-25T00:16:18+00:00 heroku[api]: Add-on update shared-database
-2012-03-25T00:16:18+00:00 heroku[api]: Release v2 created by rodrigo.phn7@gmail.com
-2012-03-24T17:17:12-07:00 heroku[slugc]: Slug compilation started
-2012-03-25T00:18:28+00:00 heroku[api]: Release v3 created by rodrigo.phn7@gmail.com
-2012-03-25T00:18:28+00:00 heroku[api]: Deploy a4b0069 by rodrigo.phn7@gmail.com
-2012-03-25T00:18:29+00:00 heroku[web.1]: State changed from created to starting
-2012-03-24T17:18:29-07:00 heroku[slugc]: Slug compilation finished
-2012-03-25T00:18:32+00:00 heroku[web.1]: Starting process with command `thin -p 14931 -e production -R /home/heroku_rack/heroku.ru start`
-2012-03-25T00:18:32+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
-2012-03-25T00:18:32+00:00 app[web.1]: >> Maximum connections set to 1024
-2012-03-25T00:18:32+00:00 app[web.1]: >> Listening on 0.0.0.0:14931, CTRL+C to stop
-2012-03-25T00:18:33+00:00 heroku[web.1]: State changed from starting to up
-2012-03-25T00:19:31+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T00:19:31+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T00:19:31+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T00:19:33+00:00 app[web.1]: 
-2012-03-25T00:19:33+00:00 app[web.1]: Started GET "/" for 177.65.10.79 at 2012-03-24 17:19:33 -0700
-2012-03-25T00:19:33+00:00 app[web.1]: 
-2012-03-25T00:19:35+00:00 app[web.1]: 
-2012-03-25T00:19:35+00:00 app[web.1]: ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `retrieve_connection'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:142:in `connection'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:168:in `retrieve_connection'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.2/lib/active_record/query_cache.rb:67:in `rescue in call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.2/lib/active_record/query_cache.rb:61:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activerecord-3.2.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:443:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.2/lib/active_support/callbacks.rb:405:in `__run_callback'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.2/lib/active_support/callbacks.rb:405:in `_run__1160339188919401453__call__1472967521631891486__callbacks'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.2/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.2/lib/active_support/callbacks.rb:81:in `run_callbacks'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.2/lib/rails/rack/logger.rb:26:in `call_app'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.2/lib/rails/rack/logger.rb:16:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/request_id.rb:22:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/activesupport-3.2.2/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/actionpack-3.2.2/lib/action_dispatch/middleware/static.rb:61:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
-2012-03-25T00:19:35+00:00 app[web.1]:   /home/heroku_rack/lib/static_assets.rb:9:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
-2012-03-25T00:19:35+00:00 app[web.1]:   /home/heroku_rack/lib/last_access.rb:15:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.2/lib/rails/railtie/configurable.rb:30:in `method_missing'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.2/lib/rails/application.rb:220:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/railties-3.2.2/lib/rails/engine.rb:479:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/urlmap.rb:64:in `block in call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/urlmap.rb:49:in `each'
-2012-03-25T00:19:35+00:00 app[web.1]:   /home/heroku_rack/lib/date_header.rb:14:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/builder.rb:134:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   .bundle/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/urlmap.rb:49:in `call'
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:76:in `block in pre_process'
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:74:in `catch'
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:74:in `pre_process'
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:57:in `process'
-2012-03-25T00:19:35+00:00 app[web.1]:   eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/connection.rb:42:in `receive_data'
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/backends/base.rb:57:in `start'
-2012-03-25T00:19:35+00:00 app[web.1]:   eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/server.rb:156:in `start'
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/controllers/controller.rb:80:in `start'
-2012-03-25T00:19:35+00:00 heroku[router]: GET ereds.heroku.com/ dyno=web.1 queue=0 wait=0ms service=6300ms status=500 bytes=643
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/runner.rb:177:in `run_command'
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) lib/thin/runner.rb:143:in `run!'
-2012-03-25T00:19:35+00:00 app[web.1]: 
-2012-03-25T00:19:35+00:00 app[web.1]:   thin (1.2.6) bin/thin:6:in `<top (required)>'
-2012-03-25T00:19:35+00:00 app[web.1]:   /usr/ruby1.9.2/bin/thin:19:in `load'
-2012-03-25T00:19:35+00:00 app[web.1]:   /usr/ruby1.9.2/bin/thin:19:in `<main>'
-2012-03-25T00:19:35+00:00 app[web.1]: cache: [GET /] miss
-2012-03-25T00:19:35+00:00 app[web.1]: 
-2012-03-25T00:19:35+00:00 heroku[nginx]: 177.65.10.79 - - [25/Mar/2012:00:19:35 +0000] "GET / HTTP/1.1" 500 643 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11" ereds.heroku.com
-2012-03-25T00:19:36+00:00 heroku[router]: GET ereds.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=50ms status=200 bytes=0
-2012-03-25T00:19:36+00:00 app[web.1]: cache: [GET /favicon.ico] miss
-2012-03-25T00:19:36+00:00 heroku[nginx]: 177.65.10.79 - - [25/Mar/2012:00:19:36 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11" ereds.heroku.com
-2012-03-24T17:28:27-07:00 heroku[slugc]: Slug compilation started
-2012-03-25T00:28:42+00:00 heroku[api]: Release v4 created by rodrigo.phn7@gmail.com
-2012-03-25T00:28:42+00:00 heroku[api]: Deploy 3d75b95 by rodrigo.phn7@gmail.com
-2012-03-25T00:28:42+00:00 heroku[web.1]: State changed from up to bouncing
-2012-03-25T00:28:42+00:00 heroku[web.1]: State changed from bouncing to created
-2012-03-25T00:28:43+00:00 heroku[web.1]: State changed from created to starting
-2012-03-24T17:28:43-07:00 heroku[slugc]: Slug compilation finished
-2012-03-25T00:28:45+00:00 heroku[web.1]: Stopping process with SIGTERM
-2012-03-25T00:28:46+00:00 app[web.1]: >> Stopping ...
-2012-03-25T00:28:46+00:00 heroku[web.1]: Starting process with command `thin -p 35464 -e production -R /home/heroku_rack/heroku.ru start`
-2012-03-25T00:28:47+00:00 app[web.1]: >> Maximum connections set to 1024
-2012-03-25T00:28:47+00:00 app[web.1]: >> Listening on 0.0.0.0:35464, CTRL+C to stop
-2012-03-25T00:28:47+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
-2012-03-25T00:28:47+00:00 heroku[web.1]: Process exited with status 0
-2012-03-25T00:28:47+00:00 heroku[web.1]: State changed from starting to up
-2012-03-25T00:29:03+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T00:29:03+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T00:29:03+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T00:29:06+00:00 app[web.1]: !! Unexpected error while processing request: Please install the postgresql adapter: `gem install activerecord-postgresql-adapter` (pg is not part of the bundle. Add it to Gemfile.)
-2012-03-25T00:29:06+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET ereds.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-25T00:29:06+00:00 heroku[nginx]: 177.65.10.79 - - [25/Mar/2012:00:29:06 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11" ereds.heroku.com
-2012-03-25T00:29:20+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-25T00:29:20+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET ereds.heroku.com/alunos dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-25T00:29:20+00:00 heroku[nginx]: 177.65.10.79 - - [25/Mar/2012:00:29:20 +0000] "GET /alunos HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11" ereds.heroku.com
-2012-03-25T00:29:29+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-25T00:29:29+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET ereds.heroku.com/alunos dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-25T00:29:29+00:00 heroku[nginx]: 177.65.10.79 - - [25/Mar/2012:00:29:29 +0000] "GET /alunos HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11" ereds.heroku.com
-2012-03-25T00:30:07+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-25T00:30:07+00:00 heroku[router]: Error H13 (Connection closed without response) -> POST ereds.heroku.com/_heroku/console dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-25T00:30:07+00:00 heroku[nginx]: 107.22.72.20 - app3462562 [25/Mar/2012:00:30:07 +0000] "POST /_heroku/console?session_id=1590756&session_action=create HTTP/1.1" 503 607 "-" "-" ereds.heroku.com
-2012-03-25T00:30:20+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-25T00:30:20+00:00 heroku[router]: Error H13 (Connection closed without response) -> POST ereds.heroku.com/_heroku/console dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-25T00:30:20+00:00 heroku[nginx]: 107.20.122.215 - app3462562 [25/Mar/2012:00:30:20 +0000] "POST /_heroku/console?session_id=1590757&session_action=create HTTP/1.1" 503 607 "-" "-" ereds.heroku.com
-2012-03-25T00:30:47+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-25T00:30:47+00:00 heroku[router]: Error H13 (Connection closed without response) -> POST ereds.heroku.com/_heroku/console dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-25T00:30:47+00:00 heroku[nginx]: 23.20.106.133 - app3462562 [25/Mar/2012:00:30:47 +0000] "POST /_heroku/console?session_id=1590758&session_action=create HTTP/1.1" 503 607 "-" "-" ereds.heroku.com
-2012-03-25T00:31:08+00:00 app[web.1]: !! Unexpected error while processing request: can't modify frozen array
-2012-03-25T00:31:08+00:00 heroku[router]: Error H13 (Connection closed without response) -> GET ereds.heroku.com/ dyno=web.1 queue= wait= service= status=503 bytes=
-2012-03-25T00:31:08+00:00 heroku[nginx]: 177.65.10.79 - - [25/Mar/2012:00:31:08 +0000] "GET / HTTP/1.1" 503 607 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11" ereds.heroku.com
-2012-03-24T17:49:54-07:00 heroku[slugc]: Slug compilation started
-2012-03-25T00:51:14+00:00 heroku[api]: Release v5 created by rodrigo.phn7@gmail.com
-2012-03-25T00:51:14+00:00 heroku[api]: Deploy e87d916 by rodrigo.phn7@gmail.com
-2012-03-25T00:51:14+00:00 heroku[web.1]: State changed from up to bouncing
-2012-03-25T00:51:14+00:00 heroku[web.1]: State changed from bouncing to created
-2012-03-25T00:51:14+00:00 heroku[web.1]: State changed from created to starting
-2012-03-24T17:51:15-07:00 heroku[slugc]: Slug compilation finished
-2012-03-25T00:51:16+00:00 heroku[web.1]: Stopping process with SIGTERM
-2012-03-25T00:51:16+00:00 app[web.1]: >> Stopping ...
-2012-03-25T00:51:18+00:00 heroku[web.1]: Process exited with status 0
-2012-03-25T00:51:18+00:00 heroku[web.1]: Starting process with command `bundle exec thin -p 5362 -e production -R /home/heroku_rack/heroku.ru start`
-2012-03-25T00:51:22+00:00 app[web.1]: >> Thin web server (v1.3.1 codename Triple Espresso)
-2012-03-25T00:51:22+00:00 app[web.1]: >> Listening on 0.0.0.0:5362, CTRL+C to stop
-2012-03-25T00:51:22+00:00 app[web.1]: >> Maximum connections set to 1024
-2012-03-25T00:51:23+00:00 heroku[web.1]: State changed from starting to up
-2012-03-25T00:51:32+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T00:51:32+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T00:51:32+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T00:51:36+00:00 app[web.1]: 
-2012-03-25T00:51:36+00:00 app[web.1]: 
-2012-03-25T00:51:36+00:00 app[web.1]: Started GET "/" for 177.65.10.79 at 2012-03-24 17:51:36 -0700
-2012-03-25T00:51:37+00:00 app[web.1]: Processing by HomeController#index as HTML
-2012-03-25T00:51:37+00:00 app[web.1]:   Rendered home/index.html.erb within layouts/application (20.7ms)
-2012-03-25T00:51:37+00:00 app[web.1]: Completed 500 Internal Server Error in 102ms
-2012-03-25T00:51:37+00:00 app[web.1]: 
-2012-03-25T00:51:37+00:00 app[web.1]: ActionView::Template::Error (bootstrap.css isn't precompiled):
-2012-03-25T00:51:37+00:00 app[web.1]:     7:     <meta name="description" content="Encontro Regional de Engenharia e Desenvolvimento Social">
-2012-03-25T00:51:37+00:00 app[web.1]:     8:     <meta name="author" content="Rodrigo Barbosa Silva">
-2012-03-25T00:51:37+00:00 app[web.1]:     9: 
-2012-03-25T00:51:37+00:00 app[web.1]:     11:     <style type="text/css">
-2012-03-25T00:51:37+00:00 app[web.1]:     12:       body {
-2012-03-25T00:51:37+00:00 app[web.1]:     10:     <%= stylesheet_link_tag "bootstrap", "bootstrap-responsive" %>
-2012-03-25T00:51:37+00:00 app[web.1]:     13:         padding-top: 60px;
-2012-03-25T00:51:37+00:00 app[web.1]: 
-2012-03-25T00:51:37+00:00 app[web.1]:   app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__1935260149629493965_22618260'
-2012-03-25T00:51:37+00:00 app[web.1]: 
-2012-03-25T00:51:37+00:00 app[web.1]: cache: [GET /] miss
-2012-03-25T00:51:37+00:00 heroku[router]: GET ereds.heroku.com/ dyno=web.1 queue=0 wait=0ms service=6498ms status=500 bytes=643
-2012-03-25T00:51:37+00:00 heroku[nginx]: 177.65.10.79 - - [25/Mar/2012:00:51:37 +0000] "GET / HTTP/1.1" 500 643 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11" ereds.heroku.com
-2012-03-25T01:59:37+00:00 heroku[web.1]: Idling
-2012-03-25T01:59:41+00:00 heroku[web.1]: Stopping process with SIGTERM
-2012-03-25T01:59:42+00:00 heroku[web.1]: Process exited with status 0
-2012-03-25T01:59:42+00:00 heroku[web.1]: State changed from up to down
-2012-03-25T17:01:36+00:00 heroku[web.1]: Unidling
-2012-03-25T17:01:36+00:00 heroku[web.1]: State changed from down to created
-2012-03-25T17:01:36+00:00 heroku[web.1]: State changed from created to starting
-2012-03-25T17:01:40+00:00 heroku[web.1]: Starting process with command `bundle exec thin -p 23130 -e production -R /home/heroku_rack/heroku.ru start`
-2012-03-25T17:01:42+00:00 app[web.1]: >> Thin web server (v1.3.1 codename Triple Espresso)
-2012-03-25T17:01:42+00:00 app[web.1]: >> Maximum connections set to 1024
-2012-03-25T17:01:42+00:00 app[web.1]: >> Listening on 0.0.0.0:23130, CTRL+C to stop
-2012-03-25T17:01:43+00:00 heroku[web.1]: State changed from starting to up
-2012-03-25T17:01:47+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T17:01:47+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T17:01:47+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2012-03-25T17:01:52+00:00 app[web.1]: 
-2012-03-25T17:01:52+00:00 app[web.1]: 
-2012-03-25T17:01:52+00:00 app[web.1]: Started GET "/" for 187.122.142.234 at 2012-03-25 10:01:52 -0700
-2012-03-25T17:01:52+00:00 app[web.1]: Processing by HomeController#index as HTML
-2012-03-25T17:01:53+00:00 app[web.1]:   Rendered home/index.html.erb within layouts/application (39.0ms)
-2012-03-25T17:01:53+00:00 app[web.1]: Completed 500 Internal Server Error in 196ms
-2012-03-25T17:01:53+00:00 app[web.1]: 
-2012-03-25T17:01:53+00:00 app[web.1]: ActionView::Template::Error (bootstrap.css isn't precompiled):
-2012-03-25T17:01:53+00:00 app[web.1]:     7:     <meta name="description" content="Encontro Regional de Engenharia e Desenvolvimento Social">
-2012-03-25T17:01:53+00:00 app[web.1]:     8:     <meta name="author" content="Rodrigo Barbosa Silva">
-2012-03-25T17:01:53+00:00 app[web.1]:     9: 
-2012-03-25T17:01:53+00:00 app[web.1]:     10:     <%= stylesheet_link_tag "bootstrap", "bootstrap-responsive" %>
-2012-03-25T17:01:53+00:00 app[web.1]:     11:     <style type="text/css">
-2012-03-25T17:01:53+00:00 app[web.1]:     12:       body {
-2012-03-25T17:01:53+00:00 app[web.1]:     13:         padding-top: 60px;
 2012-03-25T17:01:53+00:00 app[web.1]:   app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__1490089384362280712_29194280'
 2012-03-25T17:01:53+00:00 app[web.1]: 
 2012-03-25T17:01:53+00:00 app[web.1]: 
@@ -203,7 +13,8 @@
 2012-03-25T18:06:22+00:00 heroku[web.1]: State changed from up to down
 2012-03-25T18:06:22+00:00 heroku[web.1]: State changed from down to created
 2012-03-25T18:06:23+00:00 heroku[web.1]: State changed from created to starting
-2012-03-25T18:06:26+00:00 heroku[web.1]: Starting process with command `bundle exec thin -p 39037 -e production -R /home/heroku_rack/heroku.ru start`
+2012-03-25T18:06:26+00:00 heroku[web.1]: Starting process with command `bundle exec thin -p 39037 -e productio
+n -R /home/heroku_rack/heroku.ru start`
 2012-03-25T18:06:28+00:00 app[web.1]: >> Thin web server (v1.3.1 codename Triple Espresso)
 2012-03-25T18:06:28+00:00 app[web.1]: >> Maximum connections set to 1024
 2012-03-25T18:06:28+00:00 app[web.1]: >> Listening on 0.0.0.0:39037, CTRL+C to stop
@@ -247,3 +58,44 @@
 2012-03-26T12:13:53+00:00 app[web.1]: cache: [GET /favicon.ico] miss, store
 2012-03-26T12:13:53+00:00 heroku[router]: GET ereds.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=14ms status=200 bytes=0
 2012-03-26T12:13:53+00:00 heroku[nginx]: 200.142.126.94 - - [26/Mar/2012:12:13:53 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "-" "Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535.7" ereds.heroku.com
+2012-03-26T05:47:53-07:00 heroku[slugc]: Slug compilation started
+2012-03-26T12:49:31+00:00 heroku[api]: Deploy 4b14a4b by rodrigo.phn7@gmail.com
+2012-03-26T12:49:31+00:00 heroku[api]: Release v6 created by rodrigo.phn7@gmail.com
+2012-03-26T12:49:32+00:00 heroku[web.1]: State changed from up to bouncing
+2012-03-26T12:49:32+00:00 heroku[web.1]: State changed from bouncing to created
+2012-03-26T12:49:32+00:00 heroku[web.1]: State changed from created to starting
+2012-03-26T05:49:33-07:00 heroku[slugc]: Slug compilation finished
+2012-03-26T12:49:38+00:00 heroku[web.1]: Starting process with command `bundle exec thin -p 56168 -e production -R /home/heroku_rack/heroku.ru start`
+2012-03-26T12:49:40+00:00 app[web.1]: >> Thin web server (v1.3.1 codename Triple Espresso)
+2012-03-26T12:49:40+00:00 app[web.1]: >> Maximum connections set to 1024
+2012-03-26T12:49:40+00:00 app[web.1]: >> Listening on 0.0.0.0:56168, CTRL+C to stop
+2012-03-26T12:49:41+00:00 heroku[web.1]: Stopping process with SIGTERM
+2012-03-26T12:49:41+00:00 heroku[web.1]: State changed from starting to up
+2012-03-26T12:49:42+00:00 heroku[web.1]: Process exited with status 0
+2012-03-26T12:50:04+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-03-26T12:50:04+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-03-26T12:50:04+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/01/04/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2012-03-26T12:50:07+00:00 app[web.1]: Started GET "/" for 200.142.126.94 at 2012-03-26 05:50:07 -0700
+2012-03-26T12:50:07+00:00 app[web.1]: 
+2012-03-26T12:50:07+00:00 app[web.1]: 
+2012-03-26T12:50:07+00:00 app[web.1]: Processing by HomeController#index as HTML
+2012-03-26T12:50:07+00:00 app[web.1]:   Rendered home/index.html.erb within layouts/application (18.4ms)
+2012-03-26T12:50:07+00:00 app[web.1]: Completed 500 Internal Server Error in 100ms
+2012-03-26T12:50:07+00:00 app[web.1]: 
+2012-03-26T12:50:07+00:00 app[web.1]: ActionView::Template::Error (application.css isn't precompiled):
+2012-03-26T12:50:07+00:00 app[web.1]:     7:     <meta name="description" content="Encontro Regional de Engenharia e Desenvolvimento Social">
+2012-03-26T12:50:07+00:00 app[web.1]:     9: 
+2012-03-26T12:50:07+00:00 app[web.1]:     8:     <meta name="author" content="Rodrigo Barbosa Silva">
+2012-03-26T12:50:07+00:00 app[web.1]:     10:     <%= stylesheet_link_tag "application" %>
+2012-03-26T12:50:07+00:00 app[web.1]:     11:   </head>
+2012-03-26T12:50:07+00:00 heroku[router]: GET ereds.heroku.com/ dyno=web.1 queue=0 wait=0ms service=4782ms status=500 bytes=643
+2012-03-26T12:50:07+00:00 app[web.1]:     12: 
+2012-03-26T12:50:07+00:00 app[web.1]:     13: <body>
+2012-03-26T12:50:07+00:00 app[web.1]:   app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb__3659968357482690871_38532420'
+2012-03-26T12:50:07+00:00 app[web.1]: 
+2012-03-26T12:50:07+00:00 app[web.1]: 
+2012-03-26T12:50:07+00:00 app[web.1]: cache: [GET /] miss
+2012-03-26T12:50:07+00:00 heroku[nginx]: 200.142.126.94 - - [26/Mar/2012:12:50:07 +0000] "GET / HTTP/1.1" 500 643 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11" ereds.heroku.com
+2012-03-26T12:50:08+00:00 app[web.1]: cache: [GET /favicon.ico] miss
+2012-03-26T12:50:08+00:00 heroku[router]: GET ereds.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=10ms status=200 bytes=0
+2012-03-26T12:50:08+00:00 heroku[nginx]: 200.142.126.94 - - [26/Mar/2012:12:50:08 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11" ereds.heroku.com
