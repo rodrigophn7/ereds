@@ -1,0 +1,29 @@
+<%= form_for(@nova) do |f| %>
+  <% if @nova.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nova.errors.count, "error") %> prohibited this nova from being saved:</h2>
+
+      <ul>
+      <% @nova.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :corpo %><br />
+    <%= f.text_area :corpo %>
+  </div>
+  <div class="field">
+    <%= f.label :usuario %><br />
+    <%= f.text_field :usuario %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,6 +1,32 @@
 Ereds::Application.routes.draw do
 
-  resources :alunos
+  resources :hospedaria
+
+  get "home/regiao"
+
+  get "home/troca_de_experiencias"
+
+  resources :novas
+
+  resources :usuarios
+
+  resources :participantes
+
+  get "home/logo"
+
+  get "home/bastidores"
+
+  get "home/culturais"
+
+  get "home/eneds"
+
+  get "home/outros_ereds"
+
+  get "home/encontro"
+
+  get "home/programacao"
+
+  get "home/contatos"
 
   root :to => "home#index"
   get "home/index"

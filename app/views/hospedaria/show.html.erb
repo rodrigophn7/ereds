@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @hospedarium.nome %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @hospedarium.tipo %>
+</p>
+
+<p>
+  <b>Qtd vagas:</b>
+  <%= @hospedarium.qtd_vagas %>
+</p>
+
+<p>
+  <b>Preferencia:</b>
+  <%= @hospedarium.preferencia %>
+</p>
+
+<p>
+  <b>Endereco:</b>
+  <%= @hospedarium.endereco %>
+</p>
+
+
+<%= link_to 'Edit', edit_hospedarium_path(@hospedarium) %> |
+<%= link_to 'Back', hospedaria_path %>

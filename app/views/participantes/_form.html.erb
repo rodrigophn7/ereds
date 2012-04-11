@@ -1,0 +1,73 @@
+<%= form_for(@participante) do |f| %>
+  <% if @participante.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@participante.errors.count, "error") %> prohibited this participante from being saved:</h2>
+
+      <ul>
+      <% @participante.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :telefone %><br />
+    <%= f.text_field :telefone %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %><br />
+    <%= f.text_field :cpf %>
+  </div>
+  <div class="field">
+    <%= f.label :rg %><br />
+    <%= f.text_field :rg %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :cidade %><br />
+    <%= f.text_field :cidade %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br />
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :como_conheceu %><br />
+    <%= f.text_field :como_conheceu %>
+  </div>
+  <div class="field">
+    <%= f.label :tempo_interesse_tema %><br />
+    <%= f.text_field :tempo_interesse_tema %>
+  </div>
+  <div class="field">
+    <%= f.label :ja_participou %><br />
+    <%= f.text_field :ja_participou %>
+  </div>
+  <div class="field">
+    <%= f.label :universidade %><br />
+    <%= f.text_field :universidade %>
+  </div>
+  <div class="field">
+    <%= f.label :curso %><br />
+    <%= f.text_field :curso %>
+  </div>
+  <div class="field">
+    <%= f.label :inscricao %><br />
+    <%= f.text_field :inscricao %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

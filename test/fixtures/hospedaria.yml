@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  tipo: MyString
+  qtd_vagas: 1
+  preferencia: MyString
+  endereco: MyString
+
+two:
+  nome: MyString
+  tipo: MyString
+  qtd_vagas: 1
+  preferencia: MyString
+  endereco: MyString

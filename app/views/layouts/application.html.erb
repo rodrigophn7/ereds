@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ereds Sudeste</title>
+    <title>Ereds Sudeste 2012</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "application" %>
   </head>
@@ -18,15 +18,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="/home">EREDS Sudeste</a>
+          <a class="brand" href="/"><%= image_tag "eredsSudeste.png", :width=>"25", :alt=>"EREDS Sudeste" %></a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#"><b>In&iacute;cio</b></a></li>
-	      <li><a href="#">A logo</a></li>
-      	      <li><a href="#">Os Bastidores</a></li> 
-	      <li><a href="#">Eventos Culturais</a></li>
+              <li class="active"><a href="/"><b>In&iacute;cio</b></a></li>
+	      <li><a href="/home/logo">A logo</a></li>
+      	      <li><a href="/home/bastidores">Os Bastidores</a></li> 
+	      <!-- <li><a href="/home/culturais">Eventos Culturais</a></li> -->
             </ul>
-            <p class="navbar-text pull-right">Logado como <a href="#">username</a></p>
+            <!-- <p class="navbar-text pull-right">Logado como <a href="#">username</a></p> -->
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -38,25 +38,23 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Menu</li>
-              <li class="active"><a href="/participantes">Inscri&ccedil;&otilde;es</a></li>
-              <li><a href="/encontro">O Encontro</a></li>
-              <li><a href="/programacao">Programa&ccedil;&atilde;o</a></li>
-              <li><a href="/noticias">Not&iacute;cias</a></li>
-	      <li><a href="/troca_de_experiencias">Troca de Experi&ecirc;ncias</a></li>
-              <li><a href="/outros_ereds">Outros EREDS</a></li>
-	      <li><a href="/eneds">ENEDS: A origem</a></li>
-              <li><a href="/lugares/regiao">A Regi&atilde;o</a></li>
-	      <li><a href="/lugares">Onde ficar?</a></li>
-              <!--<li><a href="#"><b>Contatos</b></a></li>-->
-              <li><%= link_to 'Contatos', 'contatos', :method=> :post,:remote=>true, :update => "corpo" %> </li>
-
+              <li><%= link_to 'Inscrições', '/participantes/new' %></li>
+              <li><%= link_to 'O Encontro', '/home/encontro' %></li>
+              <li><%= link_to 'Programação', '/home/programacao' %></li>
+              <li><%= link_to 'Notícias', '/novas' %></li>
+	      <li><%= link_to 'Troca de Experiências', '/home/troca_de_experiencias' %></li>
+              <li><%= link_to 'Outros EREDS', '/home/outros_ereds' %></li>
+	      <li><%= link_to 'ENEDS: A origem', '/home/eneds' %></li>
+              <li><%= link_to 'A Região', '/home/regiao' %></li>
+	      <li><%= link_to 'Onde ficar?', '/hospedaria' %></li>
+              <li><%= link_to 'Contatos', '/home/contatos' %></li>
             </ul>
           </div><!--/.well -->
 	  
 	  <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header"><b>Redes Sociais</b></li>
-              <a href="https://www.twitter.com" target="_blank"><%= image_tag "twitter.png", :width=>"20", :alt=>"Twitter" %></a>
+              <a href="https://twitter.com/#!/2eredssudeste" target="_blank"><%= image_tag "twitter.png", :width=>"20", :alt=>"Twitter" %></a>
 	      <a href="https://www.facebook.com/pages/Ereds-Sudeste/283506018387268" target="_blank"><%=image_tag "facebook.png", :width=>"20", :alt=>"Facebook"%></a>
             </ul>
           </div><!--/.well -->

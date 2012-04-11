@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @nova.titulo %>
+</p>
+
+<p>
+  <b>Corpo:</b>
+  <%= @nova.corpo %>
+</p>
+
+<p>
+  <b>Usuario:</b>
+  <%= @nova.usuario %>
+</p>
+
+
+<%= link_to 'Edit', edit_nova_path(@nova) %> |
+<%= link_to 'Back', novas_path %>

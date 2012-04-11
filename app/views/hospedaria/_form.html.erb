@@ -1,0 +1,37 @@
+<%= form_for(@hospedarium) do |f| %>
+  <% if @hospedarium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hospedarium.errors.count, "error") %> prohibited this hospedarium from being saved:</h2>
+
+      <ul>
+      <% @hospedarium.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br />
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :qtd_vagas %><br />
+    <%= f.number_field :qtd_vagas %>
+  </div>
+  <div class="field">
+    <%= f.label :preferencia %><br />
+    <%= f.text_field :preferencia %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br />
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
