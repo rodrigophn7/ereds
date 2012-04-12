@@ -2,12 +2,12 @@ class HospedariaController < ApplicationController
   # GET /hospedaria
   # GET /hospedaria.json
   def index
-    #@hospedaria = Hospedarium.all
+    @hospedaria = Hospedarium.all
 
-    #respond_to do |format|
-    #  format.html # index.html.erb
-    #  format.json { render json: @hospedaria }
-    #end
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @hospedaria }
+    end
   end
 
   # GET /hospedaria/1
