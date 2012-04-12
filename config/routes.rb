@@ -1,5 +1,7 @@
 Ereds::Application.routes.draw do
 
+  get "home/aviso"
+
   resources :hospedaria
 
   get "home/regiao"

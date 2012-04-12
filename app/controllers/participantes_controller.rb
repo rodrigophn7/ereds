@@ -24,12 +24,12 @@ class ParticipantesController < ApplicationController
   # GET /participantes/new
   # GET /participantes/new.json
   def new
-    @participante = Participante.new
+    #@participante = Participante.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @participante }
-    end
+    #respond_to do |format|
+     # format.html # new.html.erb
+     # format.json { render json: @participante }
+   # end
   end
 
   # GET /participantes/1/edit

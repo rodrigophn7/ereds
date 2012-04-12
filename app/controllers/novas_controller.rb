@@ -2,12 +2,12 @@ class NovasController < ApplicationController
   # GET /novas
   # GET /novas.json
   def index
-    @novas = Nova.all
+    #@novas = Nova.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @novas }
-    end
+    #respond_to do |format|
+    #  format.html # index.html.erb
+    #  format.json { render json: @novas }
+    #end
   end
 
   # GET /novas/1

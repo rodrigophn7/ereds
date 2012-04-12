@@ -1,1 +1,27 @@
-<h1>Notícias em construção...</h1>
+<h1>Listing novas</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Corpo</th>
+    <th>Usuario</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @novas.each do |nova| %>
+  <tr>
+    <td><%= nova.titulo %></td>
+    <td><%= nova.corpo %></td>
+    <td><%= nova.usuario %></td>
+    <td><%= link_to 'Show', nova %></td>
+    <td><%= link_to 'Edit', edit_nova_path(nova) %></td>
+    <td><%= link_to 'Destroy', nova, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nova', new_nova_path %>
