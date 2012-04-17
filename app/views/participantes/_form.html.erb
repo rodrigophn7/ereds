@@ -10,64 +10,69 @@
       </ul>
     </div>
   <% end %>
+  
+  <div class="field">
+    <%= f.label :nome %>
+    <%= f.text_field :nome, :class=>"span4"%>
+  </div>
+  <div class="field">
+    <%= f.label :telefone %>
+    <%= f.text_field :telefone, :class=>"span2" %>
+  </div>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email, :class=>"span3" %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf %>
+    <%= f.text_field :cpf, :class=>"span2" %>
+  </div>
+  <div class="field">
+    <%= f.label :rg %>
+    <%= f.text_field :rg, :class=>"span2" %>
+  </div>
+  <div class="field">
+    <%= f.label :endereço %>
+    <%= f.text_field :endereco, :class=>"span4" %>
+  </div>
+  <div class="field">
+    <%= f.label :profissão %>
+    <%= f.text_field :profissao, :class=>"span3" %>
+  </div>
+  <div class="field">
+    <%= f.label :cidade %>
+    <%= f.text_field :cidade, :class=>"span3" %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %>
+    <%= f.select :estado, ["--","Espírito Santo","Minas Gerais","Rio de Janeiro","São Paulo"] %>
+  </div>
+  <hr/>
+  <div class="field">
+    <%= f.label "Como você conheceu o evento?" %>
+    <%= f.select :como_conheceu, ["--","Amigos", "Internet", "Instituição/Universidade", "Jornais/Revistas", "Televisão", "Outro"] %>
+  </div>
+  <div class="field">
+    <%= f.label "Já participou de um evento desse tipo?" %>
+    <%= f.select :ja_participou, ["--","Sim","Não"] %>
+  </div>
+  <div class="field">
+    <%= f.label "Participa de qual instituição/universidade?" %>
+    <%= f.text_field :universidade, :class=>"span4" %>
+  </div>
+  <div class="field">
+    <%= f.label "Qual é o seu curso?" %>
+    <%= f.text_field :curso, :class=>"span4" %>
+  </div>
+  <p>Caso deseje participar da <a href="/hospedaria">hospedagem solidária</a> preencha esse campo abaixo.</p>
+  <div class="field">
+    <%= f.label "Hospedagem solidária, escolha o lugar:" %>
+    <%= f.select :hospedarium_id, @hospedaria %>
+  </div>
+   
+  <%= f.hidden_field :inscricao %>
 
-  <div class="field">
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
-  </div>
-  <div class="field">
-    <%= f.label :telefone %><br />
-    <%= f.text_field :telefone %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :cpf %><br />
-    <%= f.text_field :cpf %>
-  </div>
-  <div class="field">
-    <%= f.label :rg %><br />
-    <%= f.text_field :rg %>
-  </div>
-  <div class="field">
-    <%= f.label :endereco %><br />
-    <%= f.text_field :endereco %>
-  </div>
-  <div class="field">
-    <%= f.label :cidade %><br />
-    <%= f.text_field :cidade %>
-  </div>
-  <div class="field">
-    <%= f.label :estado %><br />
-    <%= f.text_field :estado %>
-  </div>
-  <div class="field">
-    <%= f.label :como_conheceu %><br />
-    <%= f.text_field :como_conheceu %>
-  </div>
-  <div class="field">
-    <%= f.label :tempo_interesse_tema %><br />
-    <%= f.text_field :tempo_interesse_tema %>
-  </div>
-  <div class="field">
-    <%= f.label :ja_participou %><br />
-    <%= f.text_field :ja_participou %>
-  </div>
-  <div class="field">
-    <%= f.label :universidade %><br />
-    <%= f.text_field :universidade %>
-  </div>
-  <div class="field">
-    <%= f.label :curso %><br />
-    <%= f.text_field :curso %>
-  </div>
-  <div class="field">
-    <%= f.label :inscricao %><br />
-    <%= f.text_field :inscricao %>
-  </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Salvar"%>
   </div>
 <% end %>

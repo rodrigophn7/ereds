@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120411152458) do
+ActiveRecord::Schema.define(:version => 20120417004148) do
 
   create_table "hospedaria", :force => true do |t|
     t.string   "nome"
@@ -43,13 +43,15 @@ ActiveRecord::Schema.define(:version => 20120411152458) do
     t.string   "cidade"
     t.string   "estado"
     t.string   "como_conheceu"
-    t.string   "tempo_interesse_tema"
     t.string   "ja_participou"
     t.string   "universidade"
     t.string   "curso"
     t.string   "inscricao"
-    t.datetime "created_at",           :null => false
-    t.datetime "updated_at",           :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "profissao"
+    t.datetime "quando_chega"
+    t.integer  "hospedarium_id"
   end
 
   create_table "usuarios", :force => true do |t|
