@@ -7,14 +7,16 @@
     <th>Email</th>
     <th>Cpf</th>
     <th>Rg</th>
+    <th>Sexo</th>
+    <th>Profissão</>
     <th>Endereco</th>
     <th>Cidade</th>
     <th>Estado</th>
     <th>Como conheceu</th>
-    <th>Tempo interesse tema</th>
     <th>Ja participou</th>
     <th>Universidade</th>
     <th>Curso</th>
+    <th>Hospedaria</th>
     <th>Inscricao</th>
     <th></th>
     <th></th>
@@ -28,18 +30,20 @@
     <td><%= participante.email %></td>
     <td><%= participante.cpf %></td>
     <td><%= participante.rg %></td>
+    <td><%= participante.sexo %></td>
+    <td><%= participante.profissao %></td>
     <td><%= participante.endereco %></td>
     <td><%= participante.cidade %></td>
     <td><%= participante.estado %></td>
     <td><%= participante.como_conheceu %></td>
-    <td><%= participante.tempo_interesse_tema %></td>
     <td><%= participante.ja_participou %></td>
     <td><%= participante.universidade %></td>
     <td><%= participante.curso %></td>
+    <td><%= participante.hospedarium_id %></td>
     <td><%= participante.inscricao %></td>
     <td><%= link_to 'Show', participante %></td>
     <td><%= link_to 'Edit', edit_participante_path(participante) %></td>
-    <td><%= link_to 'Destroy', participante, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Destroy', '/participantes/' + participante.id.to_s + '/destroy'  %></td>
   </tr>
 <% end %>
 </table>

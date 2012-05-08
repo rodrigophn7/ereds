@@ -1,8 +1,10 @@
 class HospedariaController < ApplicationController
+  before_filter :check_logged_in, :only => [:edit, :update, :destroy, :new, :create]
+
   # GET /hospedaria
   # GET /hospedaria.json
   def index
-    @hospedaria = Hospedarium.all
+    @hospedaria = Hospedarium.find(:all, :conditions=>[ 'qtd_vagas > 0'])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -80,4 +82,13 @@ class HospedariaController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+private
+  def check_logged_in
+    authenticate_or_request_with_http_basic("Hospedaria") do |username, password|
+      username == "admin" && password == "eredscefetrural"
+    end
+  end
+
+
 end

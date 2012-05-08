@@ -1,8 +1,8 @@
-<h1>Hospedagem Solidária</h1>
+<h3>Escolha aqui o lugar onde desejas ficar alojado:</h3>
 <br/>
-<table class="table table-striped table-bordered table-condensed" >
+<table class="table table-striped table-bordered table-condensed">
   <tr>
-    <th>Nome</th>
+    <th>Lugar</th>
     <th>Tipo</th>
     <th>Descri&ccedil;&atilde;o</th>
     <th>Qtd vagas</th>
@@ -11,7 +11,7 @@
     <th></th>
   </tr>
 
-<% @hospedaria.each do |hospedarium| %>
+<% hospedaria.each do |hospedarium| %>
   <tr>
     <td><%= hospedarium.nome %></td>
     <td><%= hospedarium.tipo %></td>
@@ -19,7 +19,7 @@
     <td><%= hospedarium.qtd_vagas %></td>
     <td><%= hospedarium.preferencia %></td>
     <td><%= hospedarium.endereco %></td>
-    <td><%= link_to 'Visualizar', hospedarium %></td>
+    <td><%= link_to 'Selecionar', '/participantes/' + participante.id.to_s + '/select/' + hospedarium.id.to_s %></td>
   </tr>
 <% end %>
 </table>

@@ -11,6 +11,11 @@
 </p>
 
 <p>
+  <b>Descrição:</b>
+  <%= @hospedarium.descricao %>
+</p>
+
+<p>
   <b>Qtd vagas:</b>
   <%= @hospedarium.qtd_vagas %>
 </p>
@@ -26,5 +31,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_hospedarium_path(@hospedarium) %> |
-<%= link_to 'Back', hospedaria_path %>
+<%= link_to 'Editar', edit_hospedarium_path(@hospedarium) %> 
+<%= link_to 'Início', '/' %>

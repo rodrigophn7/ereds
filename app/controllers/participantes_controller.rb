@@ -1,4 +1,20 @@
 class ParticipantesController < ApplicationController
+  before_filter :check_logged_in, :only => [:edit, :update, :destroy, :index]
+
+  def select
+    @hospedarium = Hospedarium.find(params[:hospedarium_id])
+    @participante = Participante.find(params[:id])
+    @participante.hospedarium_id = @hospedarium.id
+    @hospedarium.qtd_vagas -= 1;  
+    if @participante.save and @hospedarium.save
+      respond_to do |format|
+        format.html {
+          redirect_to '/participantes/confirmacao', :notice => "Hospedaria #{@hospedarium.nome} escolhida com sucesso!", :locals=> {:participante=>@participante} 
+        }
+      end
+    end 
+  end
+
   # GET /participantes
   # GET /participantes.json
   def index
@@ -14,6 +30,8 @@ class ParticipantesController < ApplicationController
   # GET /participantes/1.json
   def show
     @participante = Participante.find(params[:id])
+    @sexos = {"Feminino" =>"Mulheres", "Masculino" => "Homens"}
+    @hospedaria = Hospedarium.find(:all, :conditions=>[ 'preferencia = ? and qtd_vagas > 0 or preferencia = ?', @sexos[@participante.sexo], 'Ambos'])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -41,12 +59,11 @@ class ParticipantesController < ApplicationController
   # POST /participantes.json
   def create
     @participante = Participante.new(params[:participante])
-
+  
     respond_to do |format|
       if @participante.save
-        @participante.inscricao = "P" + @participante.id.to_s
         ParticipanteMailer.mensagem_confirmacao(@participante).deliver
-        format.html { redirect_to @participante, notice: 'Participante was successfully created.' }
+        format.html { redirect_to @participante, notice: 'Inscricao realizada com sucesso.', locals: {:sexos=>@sexos} }
         format.json { render json: @participante, status: :created, location: @participante }
       else
         format.html { render action: "new" }
@@ -80,6 +97,18 @@ class ParticipantesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to participantes_url }
       format.json { head :no_content }
+    end
+  end
+
+private
+  def to_md5(valor)
+      Digest::MD5.hexdigest valor
+  end
+
+private
+  def check_logged_in
+    authenticate_or_request_with_http_basic("Participantes") do |username, password|
+      username == "admin" && password == "eredscefetrural"
     end
   end
 end

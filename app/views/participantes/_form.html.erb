@@ -1,4 +1,4 @@
-<%= form_for(@participante) do |f| %>
+<%= form_for (@participante) do |f| %>
   <% if @participante.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@participante.errors.count, "error") %> prohibited this participante from being saved:</h2>
@@ -17,19 +17,23 @@
   </div>
   <div class="field">
     <%= f.label :telefone %>
-    <%= f.text_field :telefone, :class=>"span2" %>
+    <%= f.text_field :telefone, :class=>"span2" %><font size=1><i>Ex.: 99-9999-9999</i></font>
   </div>
   <div class="field">
     <%= f.label :email %>
-    <%= f.text_field :email, :class=>"span3" %>
+    <%= f.text_field :email, :class=>"span3" %><font size=1><i>Ex.: alguem@exemplo.com</i></font>
   </div>
   <div class="field">
     <%= f.label :cpf %>
-    <%= f.text_field :cpf, :class=>"span2" %>
+    <%= f.text_field :cpf, :class=>"span2" %><font size=1><i>Somente n&uacute;meros</i></font>
   </div>
   <div class="field">
     <%= f.label :rg %>
-    <%= f.text_field :rg, :class=>"span2" %>
+    <%= f.text_field :rg, :class=>"span2" %><font size=1><i>Somente n&uacute;meros</i></font>
+  </div>
+  <div class="field">
+    <%= f.label :sexo %>
+    <%= f.select :sexo, ["", "Feminino", "Masculino"] %>
   </div>
   <div class="field">
     <%= f.label :endereço %>
@@ -45,16 +49,16 @@
   </div>
   <div class="field">
     <%= f.label :estado %>
-    <%= f.select :estado, ["--","Espírito Santo","Minas Gerais","Rio de Janeiro","São Paulo"] %>
+    <%= f.select :estado, ["","Espírito Santo","Minas Gerais","Rio de Janeiro","São Paulo"] %>
   </div>
   <hr/>
   <div class="field">
     <%= f.label "Como você conheceu o evento?" %>
-    <%= f.select :como_conheceu, ["--","Amigos", "Internet", "Instituição/Universidade", "Jornais/Revistas", "Televisão", "Outro"] %>
+    <%= f.select :como_conheceu, ["","Amigos", "Internet", "Instituição/Universidade", "Jornais/Revistas", "Televisão", "Outro"] %>
   </div>
   <div class="field">
     <%= f.label "Já participou de um evento desse tipo?" %>
-    <%= f.select :ja_participou, ["--","Sim","Não"] %>
+    <%= f.select :ja_participou, ["","Sim","Não"] %>
   </div>
   <div class="field">
     <%= f.label "Participa de qual instituição/universidade?" %>
@@ -64,13 +68,9 @@
     <%= f.label "Qual é o seu curso?" %>
     <%= f.text_field :curso, :class=>"span4" %>
   </div>
-  <p>Caso deseje participar da <a href="/hospedaria">hospedagem solidária</a> preencha esse campo abaixo.</p>
-  <div class="field">
-    <%= f.label "Hospedagem solidária, escolha o lugar:" %>
-    <%= f.select :hospedarium_id, @hospedaria %>
-  </div>
-   
-  <%= f.hidden_field :inscricao %>
+  <p>Marque essa caixa caso deseje participar da <a href="/hospedaria" target="_blank">Hospedagem Solidária</a>:
+    <%= f.check_box :hospedarium_id %> 
+  </p>
 
   <div class="actions">
     <%= f.submit "Salvar"%>

@@ -12,26 +12,30 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :nome %><br />
-    <%= f.text_field :nome %>
+    <%= f.label :nome %>
+    <%= f.text_field :nome, :class=>"span3" %>
   </div>
   <div class="field">
-    <%= f.label :tipo %><br />
-    <%= f.text_field :tipo %>
+    <%= f.label :tipo %>
+    <%= f.select :tipo, ["","Casa","Instituição","República","Outro"] %>
   </div>
   <div class="field">
-    <%= f.label :qtd_vagas %><br />
-    <%= f.number_field :qtd_vagas %>
+    <%= f.label :descrição %>
+    <%= f.text_field :descricao %>
   </div>
   <div class="field">
-    <%= f.label :preferencia %><br />
-    <%= f.text_field :preferencia %>
+    <%= f.label :quantidade_de_vagas %>
+    <%= f.number_field :qtd_vagas, :class=>"span1" %>
   </div>
   <div class="field">
-    <%= f.label :endereco %><br />
-    <%= f.text_field :endereco %>
+    <%= f.label :preferência %>
+    <%= f.select :preferencia, ["","Mulheres","Homens","Ambos"] %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %>
+    <%= f.text_field :endereco, :class=>"span4" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Salvar" %>
   </div>
 <% end %>

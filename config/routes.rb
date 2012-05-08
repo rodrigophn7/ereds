@@ -1,8 +1,14 @@
 Ereds::Application.routes.draw do
-
+  
+  get "participantes/confirmacao" 
+   
   get "home/aviso"
+  
+  match "participantes/:id/destroy" => 'participantes#destroy'
+  match "participantes/:id/select/:hospedarium_id" => 'participantes#select'
 
   resources :hospedaria
+  resources :participantes
 
   get "home/regiao"
 
@@ -11,8 +17,6 @@ Ereds::Application.routes.draw do
   resources :novas
 
   resources :usuarios
-
-  resources :participantes
 
   get "home/logo"
 
