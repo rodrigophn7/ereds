@@ -4,7 +4,7 @@
 <p>Parabéns, <%= @participante.nome %>, dentro de alguns instantes você receberá um email de confirmação contendo seu número de inscrição.</p>
 <p>Anote esse número, o mesmo deverá ser apresentado no credenciamento junto com documento que contenha sua foto.</p>
 
-<% if @participante.hospedarium_id == 1 %>
+<% if @participante.hospedarium_id == 1 and @hospedaria.length > 0%>
 
 <%= render :partial=>"list_hospedaria", :locals=>{:hospedaria=>@hospedaria, :participante=>@participante} %>
 <% end %>
