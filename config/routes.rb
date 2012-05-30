@@ -1,5 +1,7 @@
 Ereds::Application.routes.draw do
   
+  get "home/comissao_organizadora"
+
   get "participantes/confirmacao" 
    
   get "home/aviso"
