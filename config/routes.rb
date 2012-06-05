@@ -1,5 +1,7 @@
 Ereds::Application.routes.draw do
   
+  resources :visits
+
   get "home/comissao_organizadora"
 
   get "participantes/confirmacao" 
