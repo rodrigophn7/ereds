@@ -12,7 +12,7 @@ Ereds::Application.routes.draw do
   match "participantes/:id/select/:hospedarium_id" => 'participantes#select'
 
   resources :hospedaria
-  resources :participantes
+  resources :participantes 
 
   get "home/regiao"
 
