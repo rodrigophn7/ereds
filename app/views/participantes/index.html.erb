@@ -1,7 +1,8 @@
-<h1>Listing participantes</h1>
+<h1>Lista de participantes EREDS Sudeste 2012</h1>
 
-<table>
+<table class="table table-striped table-bordered table-condensed">
   <tr>
+    <th>Inscricao</th>
     <th>Nome</th>
     <th>Telefone</th>
     <th>Email</th>
@@ -16,15 +17,11 @@
     <th>Ja participou</th>
     <th>Universidade</th>
     <th>Curso</th>
-    <th>Hospedaria</th>
-    <th>Inscricao</th>
-    <th></th>
-    <th></th>
-    <th></th>
   </tr>
 
 <% @participantes.each do |participante| %>
   <tr>
+    <td><%= "%05d" % participante.id %></td>
     <td><%= participante.nome %></td>
     <td><%= participante.telefone %></td>
     <td><%= participante.email %></td>
@@ -39,15 +36,8 @@
     <td><%= participante.ja_participou %></td>
     <td><%= participante.universidade %></td>
     <td><%= participante.curso %></td>
-    <td><%= participante.hospedarium_id %></td>
-    <td><%= participante.inscricao %></td>
-    <td><%= link_to 'Show', participante %></td>
-    <td><%= link_to 'Edit', edit_participante_path(participante) %></td>
-    <td><%= link_to 'Destroy', '/participantes/' + participante.id.to_s + '/destroy'  %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New Participante', new_participante_path %>

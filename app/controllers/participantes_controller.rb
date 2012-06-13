@@ -18,7 +18,7 @@ class ParticipantesController < ApplicationController
   # GET /participantes
   # GET /participantes.json
   def index
-    @participantes = Participante.all
+    @participantes = Participante.select("DISTINCT ON (cpf) *")
 
     respond_to do |format|
       format.html # index.html.erb
